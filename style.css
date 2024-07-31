@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #da7297;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  background-color: #fdffd2;
+  margin: 10px;
+  border: sold 3px black;
+}
+.hold {
+  border: solid 3px green;
+}
+
+.hovered {
+  background-color: grey;
+  border-color: white;
+  border-style: dashed;
+}
+.fill {
+  background-image: url("/apple.png");
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
